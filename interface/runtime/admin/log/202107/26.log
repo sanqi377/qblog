@@ -1,0 +1,217 @@
+[2021-07-26T19:17:25+08:00][sql] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:17:25+08:00][sql] SHOW FULL COLUMNS FROM `xq_menu` [ RunTime:0.001093s ]
+[2021-07-26T19:17:25+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 0  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000264s ]
+[2021-07-26T19:17:25+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 44  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000290s ]
+[2021-07-26T19:17:25+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 73  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000285s ]
+[2021-07-26T19:17:25+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 1  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000222s ]
+[2021-07-26T19:17:25+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 70  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000256s ]
+[2021-07-26T19:17:25+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 6  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000248s ]
+[2021-07-26T19:17:25+08:00][error] [2]file_get_contents(http://lost.52msr.cn/moyan/api.php?type=b): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[C:\Users\sanqi\Desktop\xqphp\api\app\admin\controller\External.php:10]
+[2021-07-26T19:17:31+08:00][sql] CONNECT:[ UseTime:0.015489s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:17:31+08:00][sql] SHOW FULL COLUMNS FROM `xq_users` [ RunTime:0.000584s ]
+[2021-07-26T19:17:31+08:00][sql] SELECT * FROM `xq_users` WHERE  `is_delect` = 0  AND `username` = 'admin' LIMIT 1 [ RunTime:0.000210s ]
+[2021-07-26T19:17:31+08:00][sql] SHOW FULL COLUMNS FROM `xq_login_log` [ RunTime:0.000431s ]
+[2021-07-26T19:17:31+08:00][sql] INSERT INTO `xq_login_log` SET `user_name` = 'admin' , `create_time` = 1627298251 , `login_ip` = '127.0.0.1' [ RunTime:0.006276s ]
+[2021-07-26T19:17:32+08:00][error] [2]file_get_contents(http://lost.52msr.cn/moyan/api.php?type=b): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[C:\Users\sanqi\Desktop\xqphp\api\app\admin\controller\External.php:10]
+[2021-07-26T19:17:33+08:00][sql] CONNECT:[ UseTime:0.016840s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:17:33+08:00][sql] SHOW FULL COLUMNS FROM `xq_system` [ RunTime:0.001018s ]
+[2021-07-26T19:17:33+08:00][sql] SELECT * FROM `xq_system` WHERE  `key` = 'editor' LIMIT 1 [ RunTime:0.000252s ]
+[2021-07-26T19:17:33+08:00][sql] CONNECT:[ UseTime:0.016792s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:17:33+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000602s ]
+[2021-07-26T19:17:33+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000275s ]
+[2021-07-26T19:17:33+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000236s ]
+[2021-07-26T19:17:33+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 3 ORDER BY `sort` ASC [ RunTime:0.000235s ]
+[2021-07-26T19:22:01+08:00][sql] CONNECT:[ UseTime:0.022444s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:01+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000655s ]
+[2021-07-26T19:22:01+08:00][sql] INSERT INTO `xq_article` SET `add_time` = 1627298521 , `title` = 'Vue 使用 build 打包后刷新页面出现 404 解决方案' , `content` = '<p>一般出现这个情况的原因是把路由模式换成了 <code>history</code>。</p>
+<p>解决方案就是设置网站访问伪静态：</p>
+<div class=\"code-block\"><span class=\"copy-code\"></span><pre><code class=\"language-xml\"><span class=\"hljs-comment\">&lt;!-- Apache --&gt;</span>
+<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">IfModule</span> <span class=\"hljs-attr\">mod_rewrite.c</span>&gt;</span>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">IfModule</span>&gt;</span></code></pre></div>
+<div class=\"code-block\"><span class=\"copy-code\"></span><pre><code class=\"language-js\"><span class=\"hljs-comment\">&lt;!-- nginx --&gt;</span>
+location / {
+    try_files $uri $uri/ /index.html;
+}</code></pre></div>
+' , `value` = '一般出现这个情况的原因是把路由模式换成了 `history`。
+
+解决方案就是设置网站访问伪静态：
+
+```xml
+<!-- Apache -->
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+```
+
+```js
+<!-- nginx -->
+location / {
+	try_files $uri $uri/ /index.html;
+}
+```' , `cat` = '2' , `top_pic` = 'http://api.xqphp.com/uploads/top_pic/20210726\\2f02fa24a1d6141eac4affa0db347bb9.jpg' [ RunTime:0.041748s ]
+[2021-07-26T19:22:17+08:00][sql] CONNECT:[ UseTime:0.021546s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:17+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000696s ]
+[2021-07-26T19:22:17+08:00][sql] INSERT INTO `xq_article` SET `add_time` = 1627298537 , `title` = 'Vue 使用 build 打包后刷新页面出现 404 解决方案' , `content` = '<p>一般出现这个情况的原因是把路由模式换成了 <code>history</code>。</p>
+<p>解决方案就是设置网站访问伪静态：</p>
+<div class=\"code-block\"><span class=\"copy-code\"></span><pre><code class=\"language-xml\"><span class=\"hljs-comment\">&lt;!-- Apache --&gt;</span>
+<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">IfModule</span> <span class=\"hljs-attr\">mod_rewrite.c</span>&gt;</span>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">IfModule</span>&gt;</span></code></pre></div>
+<div class=\"code-block\"><span class=\"copy-code\"></span><pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- nginx --&gt;</span>
+location / {
+    try_files $uri $uri/ /index.html;
+}</code></pre></div>
+' , `value` = '一般出现这个情况的原因是把路由模式换成了 `history`。
+
+解决方案就是设置网站访问伪静态：
+
+```xml
+<!-- Apache -->
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+```
+
+```html
+<!-- nginx -->
+location / {
+	try_files $uri $uri/ /index.html;
+}
+```' , `cat` = '2' , `top_pic` = 'http://api.xqphp.com/uploads/top_pic/20210726\\2f02fa24a1d6141eac4affa0db347bb9.jpg' [ RunTime:0.010288s ]
+[2021-07-26T19:22:18+08:00][sql] CONNECT:[ UseTime:0.015472s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:18+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000526s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_article` ORDER BY `id` DESC [ RunTime:0.000255s ]
+[2021-07-26T19:22:18+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000395s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000192s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000140s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000149s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000100s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000145s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000145s ]
+[2021-07-26T19:22:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000138s ]
+[2021-07-26T19:22:20+08:00][sql] CONNECT:[ UseTime:0.000529s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:20+08:00][sql] SHOW FULL COLUMNS FROM `xq_system` [ RunTime:0.000472s ]
+[2021-07-26T19:22:20+08:00][sql] SELECT * FROM `xq_system` WHERE  `key` = 'editor' LIMIT 1 [ RunTime:0.000214s ]
+[2021-07-26T19:22:20+08:00][sql] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:20+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000462s ]
+[2021-07-26T19:22:20+08:00][sql] SELECT * FROM `xq_article` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.000207s ]
+[2021-07-26T19:22:20+08:00][sql] CONNECT:[ UseTime:0.021796s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:20+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000608s ]
+[2021-07-26T19:22:20+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000265s ]
+[2021-07-26T19:22:20+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000185s ]
+[2021-07-26T19:22:20+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 3 ORDER BY `sort` ASC [ RunTime:0.000139s ]
+[2021-07-26T19:22:21+08:00][sql] CONNECT:[ UseTime:0.022816s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:21+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000591s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_article` ORDER BY `id` DESC [ RunTime:0.000229s ]
+[2021-07-26T19:22:21+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000424s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000199s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000215s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000165s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000170s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000152s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000152s ]
+[2021-07-26T19:22:21+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000152s ]
+[2021-07-26T19:22:23+08:00][sql] CONNECT:[ UseTime:0.017886s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:23+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000625s ]
+[2021-07-26T19:22:23+08:00][sql] DELETE FROM `xq_article` WHERE  `id` = 37 [ RunTime:0.008640s ]
+[2021-07-26T19:22:24+08:00][sql] CONNECT:[ UseTime:0.021308s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:24+08:00][sql] SHOW FULL COLUMNS FROM `xq_system` [ RunTime:0.000563s ]
+[2021-07-26T19:22:24+08:00][sql] SELECT * FROM `xq_system` WHERE  `key` = 'editor' LIMIT 1 [ RunTime:0.000242s ]
+[2021-07-26T19:22:24+08:00][sql] CONNECT:[ UseTime:0.019250s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:24+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000544s ]
+[2021-07-26T19:22:24+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000185s ]
+[2021-07-26T19:22:24+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000145s ]
+[2021-07-26T19:22:24+08:00][sql] SELECT `id`,`name` FROM `xq_cats` WHERE  `pid` = 3 ORDER BY `sort` ASC [ RunTime:0.000158s ]
+[2021-07-26T19:22:24+08:00][sql] CONNECT:[ UseTime:0.015136s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:24+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000592s ]
+[2021-07-26T19:22:24+08:00][sql] SELECT * FROM `xq_article` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.000227s ]
+[2021-07-26T19:22:26+08:00][sql] CONNECT:[ UseTime:0.010515s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:22:26+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000551s ]
+[2021-07-26T19:22:26+08:00][sql] UPDATE `xq_article`  SET `update_time` = 1627298546 , `title` = 'Vue 使用 build 打包后刷新页面出现 404 解决方案' , `content` = '<p>一般出现这个情况的原因是把路由模式换成了 <code>history</code>。</p>
+<p>解决方案就是设置网站访问伪静态：</p>
+<div class=\"code-block\"><span class=\"copy-code\"></span><pre><code class=\"language-xml\"><span class=\"hljs-comment\">&lt;!-- Apache --&gt;</span>
+<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">IfModule</span> <span class=\"hljs-attr\">mod_rewrite.c</span>&gt;</span>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">IfModule</span>&gt;</span></code></pre></div>
+<div class=\"code-block\"><span class=\"copy-code\"></span><pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- nginx --&gt;</span>
+location / {
+    try_files $uri $uri/ /index.html;
+}</code></pre></div>
+' , `value` = '一般出现这个情况的原因是把路由模式换成了 `history`。
+
+解决方案就是设置网站访问伪静态：
+
+```xml
+<!-- Apache -->
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+```
+
+```html
+<!-- nginx -->
+location / {
+	try_files $uri $uri/ /index.html;
+}
+```' , `cat` = '2' , `top_pic` = 'http://api.xqphp.com/uploads/top_pic/20210726\\2f02fa24a1d6141eac4affa0db347bb9.jpg'  WHERE  `id` = 36 [ RunTime:0.008202s ]
+[2021-07-26T19:23:18+08:00][sql] CONNECT:[ UseTime:0.018479s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:23:18+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000661s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_article` ORDER BY `id` DESC [ RunTime:0.000349s ]
+[2021-07-26T19:23:18+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000508s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000262s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000244s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000235s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000239s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000230s ]
+[2021-07-26T19:23:18+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000211s ]
+[2021-07-26T19:27:20+08:00][sql] CONNECT:[ UseTime:0.022561s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:27:20+08:00][sql] SHOW FULL COLUMNS FROM `xq_menu` [ RunTime:0.001023s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 0  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000272s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 44  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000249s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 73  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000223s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 1  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000215s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 70  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000201s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT `id`,`pid`,`title`,`icon`,`path`,`status`,`sort`,`create_time` FROM `xq_menu` WHERE  `pid` = 6  AND `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000190s ]
+[2021-07-26T19:27:20+08:00][sql] CONNECT:[ UseTime:0.014430s ] mysql:host=127.0.0.1;port=3306;dbname=api_xqphp_com;charset=utf8
+[2021-07-26T19:27:20+08:00][sql] SHOW FULL COLUMNS FROM `xq_article` [ RunTime:0.000528s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_article` ORDER BY `id` DESC [ RunTime:0.000147s ]
+[2021-07-26T19:27:20+08:00][sql] SHOW FULL COLUMNS FROM `xq_cats` [ RunTime:0.000423s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000201s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000152s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000145s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000229s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000282s ]
+[2021-07-26T19:27:20+08:00][sql] SELECT * FROM `xq_cats` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000206s ]
