@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Article-id",
+    "path": "/Article/:id?",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\Article\\\\_id.vue",
+    "chunkName": "pages/Article/_id",
+    "_name": "_d8f2b2a8"
+  },
+  {
+    "name": "Category-path",
+    "path": "/Category/:path?",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\Category\\\\_path.vue",
+    "chunkName": "pages/Category/_path",
+    "_name": "_e1576564"
+  },
+  {
+    "name": "Page-path",
+    "path": "/Page/:path?",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\Page\\\\_path.vue",
+    "chunkName": "pages/Page/_path",
+    "_name": "_5d7f2b1d"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6342d17a"
+  }
+]

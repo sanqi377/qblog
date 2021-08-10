@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: #ddddde;
+}
+
+::-moz-selection {
+    background: #ddddde;
+}
+
+::-webkit-selection {
+    background: #ddddde;
+}
+
+html {
+    background-color: #f6f6f6;
+    font-size: 16px;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: "Mulish", -apple-system, "Noto Serif SC", "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", sans-serif;
+}
+
+pre,
+code {
+    font-family: consolas, sans-serif, monospace !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* 夜间模式 css */
+
+.dark {
+    background-color: #121212;
+}
+
+.dark div,
+.dark a {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark .hade_pic::after {
+    background: linear-gradient(to top, #121212, transparent) !important;
+}
+
+.dark .footer,
+.dark .content,
+.dark .conmment {
+    background-color: #121212 !important;
+}
+
+.dark .tk-input-inner {
+    background-color: transparent;
+}
+
+.dark .tk-input-group,
+.dark .tk-input-inner,
+.dark .tk-textarea-inner {
+    border-color: #90939950 !important;
+}
+
+.dark .tk-button {
+    color: #ffffffa0 !important;
+    background-color: #90939910 !important;
+    border-color: transparent !important;
+}
+
+.dark .tk-button.primary {
+    background-color: #409eff80 !important;
+}
+
+.dark .briefIntroduction,
+.dark .poetry {
+    background-color: rgb(40 109 234 / 10%) !important;
+}
+
+.dark .poetryContnet,
+.dark .poetryDynasty {
+    background: #90939950 !important;
+}
+
+.dark .brieContnet .button a {
+    background: #90939950 !important;
+}
+
+.dark .changePage>div {
+    background-color: #3e3e3e !important;
+    border: 1px solid #a4a4a4;
+}
+
+.dark .changePage>div:hover {
+    color: #20a0ff !important;
+}
+
+.dark .content .warp .v-md-plugin-tip.danger {
+    background-color: rgb(255 230 230 / 50%) !important;
+}
+
+.dark .content .warp .v-md-plugin-tip.tip {
+    background-color: rgb(243 245 247 / 50%) !important;
+}
+
+.drak .content .warp .v-md-plugin-tip.details {
+    background-color: rgb(238 238 238 / 50%) !important;
+}
+
+.dark hr {
+    background-color: #222223 !important;
+}
+
+.dark .copyright {
+    background-color: #222223 !important;
+}

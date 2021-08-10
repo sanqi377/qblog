@@ -1,0 +1,53 @@
+{
+  "Blibli": {
+    "description": "Auto imported from components/Blibli/Index.vue"
+  },
+  "CommentContent": {
+    "description": "Auto imported from components/Comment/Content.vue"
+  },
+  "Comment": {
+    "description": "Auto imported from components/Comment/Index.vue"
+  },
+  "Empty": {
+    "description": "Auto imported from components/Empty/Index.vue"
+  },
+  "Copyright": {
+    "description": "Auto imported from components/Copyright/Index.vue"
+  },
+  "Card": {
+    "description": "Auto imported from components/Card/Index.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Index.vue"
+  },
+  "Github": {
+    "description": "Auto imported from components/Github/Index.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header/Index.vue"
+  },
+  "HeaderNav": {
+    "description": "Auto imported from components/Header/Nav.vue"
+  },
+  "KeletonScreen": {
+    "description": "Auto imported from components/KeletonScreen/Index.vue"
+  },
+  "Link": {
+    "description": "Auto imported from components/Link/Index.vue"
+  },
+  "Loader": {
+    "description": "Auto imported from components/Loader/Index.vue"
+  },
+  "Music": {
+    "description": "Auto imported from components/Music/Index.vue"
+  },
+  "Search": {
+    "description": "Auto imported from components/Search/Index.vue"
+  },
+  "Sidebar": {
+    "description": "Auto imported from components/Sidebar/Index.vue"
+  },
+  "Toast": {
+    "description": "Auto imported from components/Toast/Index.vue"
+  }
+}

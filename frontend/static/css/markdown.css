@@ -1,0 +1,65 @@
+/* 文章页 Markdown 样式 */
+
+.content .warp p {
+    margin-bottom: 1rem;
+}
+
+.content .warp p:last-child {
+    margin-bottom: 0;
+}
+
+.content .warp h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.875em;
+    margin-top: 1.75em;
+    line-height: 1.1;
+}
+
+.content .warp h2:first-child {
+    margin-top: 0;
+}
+
+.content .warp img {
+    width: 100%;
+}
+
+.content .warp p>code {
+    background: #f7f7f7;
+    margin: 0 3px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #666;
+    border: 1px solid #eee;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    margin: .85rem 0;
+    padding: 1.25rem 1.5rem;
+    overflow: auto;
+    line-height: 1.4;
+    background-color: #282c34;
+    border-radius: 6px;
+}
+
+div.code-toolbar>.toolbar {
+    opacity: 1;
+}
+
+div.code-toolbar>.toolbar>.toolbar-item>a,
+div.code-toolbar>.toolbar>.toolbar-item>button,
+div.code-toolbar>.toolbar>.toolbar-item>span {
+    background: transparent;
+    box-shadow: inherit;
+    font-size: 12px;
+}
+
+div.code-toolbar>.toolbar>.toolbar-item>a:hover,
+div.code-toolbar>.toolbar>.toolbar-item>a:focus,
+div.code-toolbar>.toolbar>.toolbar-item>button:hover,
+div.code-toolbar>.toolbar>.toolbar-item>button:focus,
+div.code-toolbar>.toolbar>.toolbar-item>span:hover,
+div.code-toolbar>.toolbar>.toolbar-item>span:focus {
+    color: #bbb;
+    font-size: 12px;
+}
