@@ -281,7 +281,10 @@ a {
     -webkit-box-orient: vertical;
     margin-bottom: 0.5rem;
     font-weight: 700;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 .card-dsc {
