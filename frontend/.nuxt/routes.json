@@ -2,29 +2,29 @@
   {
     "name": "Article-id",
     "path": "/Article/:id?",
-    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\Article\\\\_id.vue",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\qblog\\\\frontend\\\\pages\\\\Article\\\\_id.vue",
     "chunkName": "pages/Article/_id",
-    "_name": "_d8f2b2a8"
+    "_name": "_d642b90c"
   },
   {
     "name": "Category-path",
     "path": "/Category/:path?",
-    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\Category\\\\_path.vue",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\qblog\\\\frontend\\\\pages\\\\Category\\\\_path.vue",
     "chunkName": "pages/Category/_path",
-    "_name": "_e1576564"
+    "_name": "_24ef1480"
   },
   {
     "name": "Page-path",
     "path": "/Page/:path?",
-    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\Page\\\\_path.vue",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\qblog\\\\frontend\\\\pages\\\\Page\\\\_path.vue",
     "chunkName": "pages/Page/_path",
-    "_name": "_5d7f2b1d"
+    "_name": "_2c2546e2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\xqphp\\\\web\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\sanqi\\\\Desktop\\\\qblog\\\\frontend\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_6342d17a"
+    "_name": "_b670ff28"
   }
 ]

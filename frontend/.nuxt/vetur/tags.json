@@ -2,20 +2,20 @@
   "Blibli": {
     "description": "Auto imported from components/Blibli/Index.vue"
   },
+  "Card": {
+    "description": "Auto imported from components/Card/Index.vue"
+  },
   "CommentContent": {
     "description": "Auto imported from components/Comment/Content.vue"
   },
   "Comment": {
     "description": "Auto imported from components/Comment/Index.vue"
   },
-  "Empty": {
-    "description": "Auto imported from components/Empty/Index.vue"
-  },
   "Copyright": {
     "description": "Auto imported from components/Copyright/Index.vue"
   },
-  "Card": {
-    "description": "Auto imported from components/Card/Index.vue"
+  "Empty": {
+    "description": "Auto imported from components/Empty/Index.vue"
   },
   "Footer": {
     "description": "Auto imported from components/Footer/Index.vue"

@@ -38,7 +38,7 @@
                     <el-col :span="19">
                         <el-input
                             v-model="content.title"
-                            maxlength="50"
+                            maxlength="100"
                             show-word-limit
                             placeholder="请输入文章标题"
                             style="border-bottom: 0"

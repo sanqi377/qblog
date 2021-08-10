@@ -7,11 +7,11 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<Blibli>` | `<blibli>` (components/Blibli/Index.vue)
+- `<Card>` | `<card>` (components/Card/Index.vue)
 - `<CommentContent>` | `<comment-content>` (components/Comment/Content.vue)
 - `<Comment>` | `<comment>` (components/Comment/Index.vue)
-- `<Empty>` | `<empty>` (components/Empty/Index.vue)
 - `<Copyright>` | `<copyright>` (components/Copyright/Index.vue)
-- `<Card>` | `<card>` (components/Card/Index.vue)
+- `<Empty>` | `<empty>` (components/Empty/Index.vue)
 - `<Footer>` | `<footer>` (components/Footer/Index.vue)
 - `<Github>` | `<github>` (components/Github/Index.vue)
 - `<Header>` | `<header>` (components/Header/Index.vue)
